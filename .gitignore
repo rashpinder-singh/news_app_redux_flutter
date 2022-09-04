@@ -19,3 +19,10 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+.flutter-plugins
+.flutter-plugins-dependencies
+android/local.properties
+linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux
+linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux
+windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows
+windows/flutter/ephemeral/.plugin_symlinks/url_launcher_windows
