@@ -39,21 +39,82 @@ dependencies:
   redux: any
   flutter_redux: any
 
-  ## Repository && Network Management  
-  redux_epics: any
-  dio: any
-  
+ 
   ## Route and Navigation 
   auto_route: any
-
+  
   ## UI / UX 
   shimmer: any
   cached_network_image: any
-  flutter_svg: any
   youtube_player_iframe: any
+ 
+  # Flutter plugin for querying information about the application pacakge,
+  # such as CFBundleVersion on iOS or versionCode on Android.
+  package_info: any
 
   ## Generated code 
   freezed: any
+  
+
+  # A powerful Http client for Dart, which supports Interceptors,
+  # FormData, Request Cancellation, File Downloading, Timeout etc.
+  dio: any
+  redux_epics: any
+
+
+  # Flutter plugin for launching a URL.http
+  url_launcher: any
+
+  # Simple direct Service Locator that allows to decouplse the interface
+  # from a concrete implementation and to access the concrete implementation
+  # from everywhere in your App
+  get_it: any
+
+  # Functional Programming in Dart
+  dartz: any
+
+  # A Dart package that helps to implement value based equality without
+  # needing to explicitly override == and hashCode
+  equatable: any
+
+  # Flutter plugin for discovering the state of the network
+  connectivity_plus: any
+
+  # Flutter plugin providing detailed information about the device
+  device_info_plus: any
+
+  # Easy and fast internationalization for your Flutter Apps
+  easy_localization: any
+
+  # Package provides internalionalized and localized messages, including message translation,
+  # plurals and genders,date/number formatting and parsing, and bidirectional text
+  intl: any
+
+  # Classes and helper functions that support JSON code generation via the 'json_serializable' package
+  json_annotation: any
+
+  # Easily configure any flutter application with global variables using a `.env` file
+  flutter_dotenv: any
+
+  # An SVG rendering and widget library for Flutter, which allows painting and displaying
+  # Scalable Vector Graphics 1.1 files.
+  flutter_svg: any
+
+  # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS
+  # and SharedPreferences on Android.
+  shared_preferences: any
+
+  # Flutter plugin for Firebase Core, enabling connecting to multiple Firebase apps.
+  firebase_core: any
+
+  # Flutter plugin for Firebase auth.
+  firebase_auth: any
+
+  # The font awesome icon pack available as Flutter icons.
+  font_awesome_flutter: any
+
+  # Flutter plugin for Google sign in.
+  google_sign_in: any
 
 dev_dependencies:
   flutter_test:
