@@ -1,8 +1,8 @@
 import 'dart:io';
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:news_app_redux_flutter/presentation/splash/splash.dart';
 import 'package:news_app_redux_flutter/utils/config/flavor_config.dart';
 
 class App extends StatefulWidget {
@@ -24,7 +24,7 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner:
           FlavorConfig.instance.flavor == Flavor.development,
       localizationsDelegates: context.localizationDelegates,
@@ -50,9 +50,10 @@ class _AppState extends State<App> {
       title: FlavorConfig.instance.flavor == Flavor.development
           ? 'Dev FNews'
           : 'FNews',
-      home: const SplashPage(),
-      onGenerateRoute: (RouteSettings settings) =>
-          AppRoute.onGenerateRoute(settings),
+     
+      routeInformationParser:
+          _appRouter.defaultRouteParser(includePrefixMatches: true),
+      routerDelegate: _appRouter.delegate(),
       builder: (context, child) {
         return GestureDetector(
           onTap: () {

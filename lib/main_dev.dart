@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app_redux_flutter/app.dart';
 import 'package:news_app_redux_flutter/firebase_options.dart';
 import 'package:news_app_redux_flutter/utils/config/base_url_config.dart';
 import 'package:news_app_redux_flutter/utils/config/flavor_config.dart';
